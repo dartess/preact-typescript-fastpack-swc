@@ -1,0 +1,17 @@
+{
+    "development": true,
+    "resolveExtensions": [
+        "tsx"
+    ],
+    "entryPoints": [
+        "./src"
+    ],
+    "outputDir": "public/build",
+    "outputFilename": "app.js",
+    "preprocess": [
+        {
+            "re": "\\.tsx$",
+            "process": "swc-loader"
+        }
+    ]
+}
